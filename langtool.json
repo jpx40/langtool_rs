@@ -1,0 +1,167 @@
+{
+  "software": {
+    "name": "LanguageTool",
+    "version": "6.5.15",
+    "buildDate": "2024-08-07 14:42:24 +0200",
+    "apiVersion": 1,
+    "premium": true,
+    "premiumHint": "You might be missing errors only the Premium version can find. Contact us at support<at>languagetoolplus.com.",
+    "status": ""
+  },
+  "warnings": {
+    "incompleteResults": false
+  },
+  "language": {
+    "name": "German (Germany)",
+    "code": "de-DE",
+    "detectedLanguage": {
+      "name": "German (Germany)",
+      "code": "de-DE",
+      "confidence": 0.5069751,
+      "source": "ngram"
+    }
+  },
+  "matches": [
+    {
+      "message": "Dieser Satz fängt nicht mit einem großgeschriebenen Wort an.",
+      "shortMessage": "",
+      "replacements": [
+        {
+          "value": "Klein"
+        }
+      ],
+      "offset": 0,
+      "length": 5,
+      "context": {
+        "text": "klein, ud",
+        "offset": 0,
+        "length": 5
+      },
+      "sentence": "klein, ud",
+      "type": {
+        "typeName": "Other"
+      },
+      "rule": {
+        "id": "UPPERCASE_SENTENCE_START",
+        "description": "Großschreibung am Satzanfang",
+        "issueType": "typographical",
+        "urls": [
+          {
+            "value": "https://languagetool.org/insights/de/beitrag/gross-klein-schreibung-rechtschreibung/#1-satzanf%C3%A4nge-schreiben-wir-gro%C3%9F"
+          }
+        ],
+        "category": {
+          "id": "CASING",
+          "name": "Groß-/Kleinschreibung"
+        },
+        "isPremium": false,
+        "confidence": 0.52
+      },
+      "ignoreForIncompleteSentence": true,
+      "contextForSureMatch": -1
+    },
+    {
+      "message": "Möglicher Tippfehler gefunden.",
+      "shortMessage": "Rechtschreibfehler",
+      "replacements": [
+        {
+          "value": "und"
+        },
+        {
+          "value": "out"
+        },
+        {
+          "value": "auf"
+        },
+        {
+          "value": "aus"
+        },
+        {
+          "value": "um"
+        },
+        {
+          "value": "zum"
+        },
+        {
+          "value": "zur"
+        },
+        {
+          "value": "nur"
+        },
+        {
+          "value": "gut"
+        },
+        {
+          "value": "nun"
+        },
+        {
+          "value": "du"
+        },
+        {
+          "value": "tun"
+        },
+        {
+          "value": "uns"
+        },
+        {
+          "value": "Fuß"
+        },
+        {
+          "value": "Ruf"
+        },
+        {
+          "value": "Zug"
+        },
+        {
+          "value": "ums"
+        },
+        {
+          "value": "TuS"
+        },
+        {
+          "value": "ad"
+        },
+        {
+          "value": "tut"
+        }
+      ],
+      "offset": 7,
+      "length": 2,
+      "context": {
+        "text": "klein, ud",
+        "offset": 7,
+        "length": 2
+      },
+      "sentence": "klein, ud",
+      "type": {
+        "typeName": "UnknownWord"
+      },
+      "rule": {
+        "id": "GERMAN_SPELLER_RULE",
+        "description": "Möglicher Rechtschreibfehler",
+        "issueType": "misspelling",
+        "category": {
+          "id": "TYPOS",
+          "name": "Mögliche Tippfehler"
+        },
+        "isPremium": false,
+        "confidence": 0.55
+      },
+      "ignoreForIncompleteSentence": false,
+      "contextForSureMatch": 0
+    }
+  ],
+  "sentenceRanges": [[0, 9]],
+  "extendedSentenceRanges": [
+    {
+      "from": 0,
+      "to": 9,
+      "detectedLanguages": [
+        {
+          "language": "de",
+          "rate": 1
+        }
+      ]
+    }
+  ]
+}
