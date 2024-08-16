@@ -1,5 +1,9 @@
+use std::{array, ops::Index};
+
 // https://languagetool.org/http-api/swagger-ui/#!/default/post_words_add
-//
+// https://dev.languagetool.org/http-server.html
+pub mod api;
+pub mod check;
 pub struct Response {
     pub software: Software,
     pub warnings: Warnings,
@@ -103,6 +107,14 @@ pub struct Category {
     pub name: String,
 }
 
+#[no_mangle]
+pub fn test_insert() {
+    let mut x: [i32,10] = [10, 10];
+    x[2] = 1;
+    println!("{:?}", x)
+}
+
 fn main() {
+    test_insert();
     println!("Hello, world!");
 }
